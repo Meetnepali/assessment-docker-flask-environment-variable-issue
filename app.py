@@ -1,0 +1,1 @@
+from flask import Flask \nfrom os import getenv \napp = Flask(__name__) \n@app.route('/') \ndef hello_world(): \n    return 'Hello world! Your env is ' + str(getenv('MY_VAR'))
