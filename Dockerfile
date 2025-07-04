@@ -1,0 +1,1 @@
+FROM python:3.8 \nWORKDIR /app\nADD requirements.txt /app \nRUN pip install -r requirements.txt \nADD . /app \nCMD ['python', 'app.py']
